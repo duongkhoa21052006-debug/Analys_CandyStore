@@ -1,8 +1,6 @@
+# 🍬 Sweet Ledger — Data Pipeline & Analytics
 
-
-##  Project Overview
-
-**Candy Store Data Pipeline & Analytics** is a data analytics project designed to clean, transform, and analyze candy store sales data.
+**Sweet Ledger — Data Pipeline & Analytics** is a data analytics project designed to clean, transform, and analyze candy store sales data.
 
 The project uses **Python** for data cleaning and preprocessing, then provides an **interactive web-based dashboard** built with HTML, CSS, and JavaScript for exploring sales performance.
 
@@ -10,7 +8,8 @@ The dashboard allows users to upload a cleaned CSV file and analyze key business
 
 ---
 
-##  Objectives
+## 🎯 Objectives
+
 * Clean and preprocess raw sales data using Python.
 * Improve data quality by handling duplicates, missing values, invalid values, and inconsistent data types.
 * Transform raw data into a structured dataset suitable for analysis.
@@ -19,8 +18,10 @@ The dashboard allows users to upload a cleaned CSV file and analyze key business
 
 ---
 
-## Technologies
+## 🛠️ Technologies
+
 * **Python**
+
   * Pandas
   * NumPy
 * **HTML5**
@@ -35,7 +36,7 @@ The dashboard allows users to upload a cleaned CSV file and analyze key business
 ## 📂 Project Structure
 
 ```text
-Candy-Store-Data-Pipeline-Analytics/
+Sweet-Ledger-Data-Pipeline-Analytics/
 │
 ├── data/
 │   ├── sale.csv
@@ -45,7 +46,7 @@ Candy-Store-Data-Pipeline-Analytics/
 │   └── clean_data.py
 │
 ├── dashboard/
-│   └── index.html
+│   └── sweet-ledger-dashboard.html
 │
 └── README.md
 ```
@@ -87,14 +88,14 @@ The cleaning process includes:
 * Removing duplicate records.
 * Removing unnecessary whitespace from text fields.
 * Converting numeric columns to appropriate data types.
-* Converting date columns to DateTime format.
+* Converting date columns to `datetime` format.
 * Handling missing values.
 * Detecting and removing invalid values.
 * Validating quantity, price, cost, and discount values.
 * Standardizing postal codes.
 * Creating additional time-related attributes.
 
-### Additional Features
+### Additional Analytical Features
 
 The cleaning process also generates analytical fields such as:
 
@@ -109,20 +110,27 @@ The cleaning process also generates analytical fields such as:
 * `calculated_profit`
 * `shipping_days`
 
+These derived fields make the cleaned dataset more suitable for business analysis and dashboard visualization.
+
 ---
 
 ## 📊 Dashboard
+
 The web dashboard provides an interactive interface for analyzing the cleaned sales data.
 
 ### Key Performance Indicators
+
 The dashboard displays:
+
 * **Total Sales**
 * **Total Profit**
 * **Total Orders**
 * **Quantity Sold**
 
 ### Visualizations
+
 The dashboard includes:
+
 * Sales by Month
 * Sales by Category
 * Profit by Region
@@ -130,7 +138,9 @@ The dashboard includes:
 * Detailed Sales Table
 
 ### Filters
+
 Users can filter the dashboard by:
+
 * Year
 * Region
 * Category
@@ -138,19 +148,27 @@ Users can filter the dashboard by:
 ---
 
 ## 🌐 Web Dashboard
+
 The dashboard supports direct CSV upload.
+
 Users can:
+
 1. Open the dashboard.
 2. Upload `sale_cleaned.csv`.
 3. The system automatically reads the CSV file.
-4. Data is processed in the browser.
+4. Data is processed directly in the browser.
 5. KPIs, charts, and tables are updated automatically.
+
 No database or real-time server is required for the current version.
+
+For the best experience, the dashboard can be opened using **VS Code with Live Server**.
 
 ---
 
-##  Dataset
+## 📁 Dataset
+
 The dataset contains sales transaction information including:
+
 * Order information
 * Customer information
 * Product information
@@ -161,11 +179,15 @@ The dataset contains sales transaction information including:
 * Discount
 * Shipping information
 * Date information
+
 The cleaned dataset contains **9,994 records and 33 columns**.
+
 ---
 
-##  Business Questions
+## 💡 Business Questions
+
 The dashboard can be used to answer questions such as:
+
 * What is the total sales revenue?
 * What is the total profit?
 * Which months generate the highest sales?
@@ -176,31 +198,34 @@ The dashboard can be used to answer questions such as:
 * How does business performance change across different years?
 
 ---
-##  How to Run
-### 1. Clean the data
-Run the Python cleaning script:
+
+## 🚀 How to Run
+
+### 1. Clean the Data
+
+From the project root directory, run:
 
 ```bash
-python clean_data.py
+python cleaning/clean_data.py
 ```
 
 This generates:
 
 ```text
-sale_cleaned.csv
+data/sale_cleaned.csv
 ```
 
-### 2. Open the dashboard
+### 2. Open the Dashboard
 
 Open:
 
 ```text
-dashboard/index.html
+dashboard/sweet-ledger-dashboard.html
 ```
 
 For the best experience, use **VS Code with Live Server**.
 
-### 3. Upload the cleaned dataset
+### 3. Upload the Cleaned Dataset
 
 Click:
 
@@ -211,14 +236,17 @@ Upload CSV
 and select:
 
 ```text
-sale_cleaned.csv
+data/sale_cleaned.csv
 ```
-The dashboard will automatically load the data.
+
+The dashboard will automatically load and process the data.
 
 ---
 
-##  Future Improvements
+## 🔮 Future Improvements
+
 Possible improvements for future versions:
+
 * Connect the dashboard to a SQL Server database.
 * Add an ETL pipeline using SSIS.
 * Build a Data Warehouse using a Star Schema.
@@ -230,8 +258,11 @@ Possible improvements for future versions:
 * Deploy the dashboard as a web application.
 
 ---
-##  Project Purpose
+
+## 🎓 Project Purpose
+
 This project was developed to practice practical skills in:
+
 * Data Cleaning
 * Data Preprocessing
 * Exploratory Data Analysis
@@ -241,9 +272,13 @@ This project was developed to practice practical skills in:
 * Data Pipeline Development
 
 ---
-## Project Status
+
+## 📌 Project Status
+
 **Completed**
-Current version supports:
+
+The current version supports:
+
 * CSV data cleaning
 * Cleaned data generation
 * CSV upload
